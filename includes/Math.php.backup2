@@ -1,0 +1,10 @@
+<?php
+class MathRenderer {
+    public static function renderMath( $tex ) {
+        global $wgMathPath;
+        $url = htmlspecialchars( "$wgMathPath?$tex");
+        $alt = trim(str_replace("\n", ' ', htmlspecialchars( $tex )));
+        return "<img class='tex' src=\"$url\" alt=\"$alt\" />";
+    }
+}
+?>

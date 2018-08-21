@@ -1,0 +1,3 @@
+[submodule "MeanEditor"]
+	path = MeanEditor
+	url = ./extensions/MeanEditor/
